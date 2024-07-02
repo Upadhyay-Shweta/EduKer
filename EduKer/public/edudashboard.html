@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Educator Dashboard </title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="css/dash.css">
+</head>
+
+<body>
+    <form action="http://localhost:3000/submit" method="POST" id="registrationForm">
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">Educator</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="folder-outline"></ion-icon>
+                        </span>
+                        <span class="title">Documents</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="cloud-upload-outline"></ion-icon>
+                        </span>
+                        <span class="title">Upload</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- =========== Upload =========  -->
+
+        <div class="upload">
+            <input type="file" id="fileInput" name="Upload" accept=".pdf, .doc, .docx">
+            <button onclick="uploadFile()">Submit </button>
+            <p id="status"></p>
+          </div>
+         </div>
+        </div>
+    </div>
+</div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="js/main.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </form>
+</body>
+
+</html>
